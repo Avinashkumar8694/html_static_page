@@ -8,12 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    function hideme()
-    {
-        
-    }
-</script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="container">
@@ -47,16 +46,27 @@
                     </div>
                   </div>
             </div>
+            <script>
+                $(function() {
+                $(".drop-down").on("click", function() {
+                    if ($(".nav-div-nav").hasClass("active")) {
+                        $(".nav-div-nav").removeClass("active");
+                    } else {
+                        $(".nav-div-nav").addClass("active");
+                    }
+                });
+            });
+                </script>
             <div class="nav-div">
                 <ul >
-                    <li><a class="nav-div-nav hide active" href="#About">Home</a></li>
-                    <li><a class="nav-div-nav hide active" href="#Posts">Posts</a></li>
-                    <li><a class="nav-div-nav hide active" href="#Photos">Photos</a></li>
-                    <li><a class="nav-div-nav hide active" href="#Videos">Videos</a></li>
-                    <li><a class="nav-div-nav hide active" href="#Comments">Comments</a></li>
-                    <li ><a class="active nav-div-nav hide " href="#about">Setting</a></li>
-                    <li ><a class="active nav-div-nav hide" href="#about">View Profile For All</a></li>
-                    <li class="drop-down" style="text-align: center;" onclick="hideme()"><a><i class="fas fa-caret-down nav-div-nav"></i></a> </li>
+                    <li><a class="nav-div-nav " href="#About">Home</a></li>
+                    <li><a class="nav-div-nav  " href="#Posts">Posts</a></li>
+                    <li><a class="nav-div-nav " href="#Photos">Photos</a></li>
+                    <li><a class="nav-div-nav " href="#Videos">Videos</a></li>
+                    <li><a class="nav-div-nav " href="#Comments">Comments</a></li>
+                    <li ><a class=" nav-div-nav " href="#about">Setting</a></li>
+                    <li ><a class=" nav-div-nav" href="#about">View Profile For All</a></li>
+                    <li class="drop-down" style="text-align: center;"><a><i class="fas fa-caret-down "></i></a> </li>
                   </ul>
             </div>
             <div class="timeline">
@@ -91,6 +101,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        
                     </div>
                     <div class="second">
                         <div class="second-one">
@@ -101,7 +113,7 @@
                             
                             
                         </div>
-                        <div class="second-one">
+                        <div class="second-second">
                             <div class="card-img"><img class="img-one" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="border-radius:50%;"></div>
                             <div class="card-img"><img class="img-one" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="border-radius:50%;"></div>
                             <div class="card-img"><img class="img-one" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="border-radius:50%;"></div>
@@ -109,6 +121,7 @@
                             
                             
                         </div>
+                        
                     </div>
             </div>
 
